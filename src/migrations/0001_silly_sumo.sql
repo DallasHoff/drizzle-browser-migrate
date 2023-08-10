@@ -1,0 +1,1 @@
+ALTER TABLE groceries ADD `quantity` integer DEFAULT 1;

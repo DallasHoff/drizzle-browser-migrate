@@ -1,0 +1,22 @@
+{
+	"name": "drizzle-browser-migrate",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"generate-migrations": "drizzle-kit generate:sqlite --schema ./src/schema.ts --out ./src/migrations"
+	},
+	"devDependencies": {
+		"drizzle-kit": "^0.19.12",
+		"prettier": "^3.0.1",
+		"typescript": "^5.0.2",
+		"vite": "^4.4.5"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.28.0",
+		"sqlocal": "^0.5.1"
+	}
+}
